@@ -1,76 +1,109 @@
-```mermaid
-C4Context
-  title Hotel Management System - Context Diagram
-  Person(guest, "Guest", "A customer who books and stays at the hotel")
-  Person(frontDesk, "Front Desk Staff", "Manages reservations and guest interactions")
-  Person(housekeeping, "Housekeeping Staff", "Ensures rooms are cleaned and updated")
-  Person(manager, "Hotel Manager", "Oversees hotel operations and finances")
-  System(hms, "Hotel Management System", "Central system for managing hotel operations")
-  System_Ext(paymentGateway, "Payment Gateway", "Handles secure transactions")
-  
-  guest --> hms : "Books a room online"
-  frontDesk --> hms : "Manages reservations and check-ins"
-  housekeeping --> hms : "Receives and updates room cleaning tasks"
-  manager --> hms : "Views reports and manages staff"
-  hms --> paymentGateway : "Processes payments"
-```
+# Hotel Management System Architecture
+
+## Introduction
+This document outlines the C4 architectural diagrams for the Hotel Management System. The C4 model provides a simple yet powerful way to describe and visualize software architecture at different levels of abstraction.
+
+## Level 1: System Context Diagram
+The System Context Diagram provides a high-level overview of the Hotel Management System, showing how it interacts with external entities.
 
 ```mermaid
-C4Container
-  title Hotel Management System - Container Diagram
-  System_Boundary(hms, "Hotel Management System") {
-    Container(webApp, "Web Application", "React/Angular")
-    Container(mobileApp, "Mobile App", "React Native/Flutter")
-    Container(api, "Backend API", "Node.js/Django")
-    ContainerDb(database, "Database", "MySQL/PostgreSQL")
-  }
-  
-  System_Ext(paymentGateway, "Payment Gateway")
-  guest --> webApp : "Access online booking"
-  frontDesk --> webApp : "Manages reservations"
-  housekeeping --> mobileApp : "Receives tasks"
-  webApp --> api : "Sends requests"
-  mobileApp --> api : "Updates housekeeping tasks"
-  api --> database : "Stores and retrieves data"
-  api --> paymentGateway : "Processes transactions"
+graph TD
+    Guest -->|Book Room| WebApplication
+    HousekeepingStaff -->|Receive Tasks| MobileApp
+    FrontDeskStaff -->|Manage Reservations| WebApplication
+    Management -->|View Reports| WebApplication
+    WebApplication -->|Read/Write Data| Database
+    MobileApp -->|Read/Write Data| Database
+    subgraph Hotel Management System
+        WebApplication
+        MobileApp
+        Database
+    end
 ```
 
-```mermaid
-C4Component
-  title Hotel Management System - Component Diagram
-  Container_Boundary(api, "Backend API") {
-    Component(reservationService, "Reservation Service")
-    Component(customerService, "Customer Management")
-    Component(housekeepingService, "Housekeeping Service")
-    Component(financialService, "Financial Management")
-    Component(inventoryService, "Inventory Management")
-  }
-  
-  webApp --> reservationService : "Book rooms"
-  webApp --> customerService : "Manage guest profiles"
-  mobileApp --> housekeepingService : "Update room status"
-  api --> financialService : "Process payments and payroll"
-  api --> inventoryService : "Manage supplies"
-```
+## Level 2: Container Diagram
+The Container Diagram shows the high-level architecture of the Hotel Management System, including the major containers such as the web application, mobile app, and database.
 
 ```mermaid
-C4Deployment
-  title Hotel Management System - Deployment Diagram
-  Deployment_Node(aws, "Cloud Hosting - AWS/Azure") {
-    Deployment_Node(webServer, "Web Server", "NGINX/Apache") {
-      Container(webApp, "Web Application")
+graph TD
+    Guest -->|Book Room| WebApplication
+    HousekeepingStaff -->|Receive Tasks| MobileApp
+    FrontDeskStaff -->|Manage Reservations| WebApplication
+    Management -->|View Reports| WebApplication
+    WebApplication -->|Backend API| BackendAPI
+    MobileApp -->|Backend API| BackendAPI
+    BackendAPI -->|Read/Write Data| Database
+
+    subgraph Hotel Management System
+        subgraph Web Server
+            WebApplication
+            BackendAPI
+        end
+        subgraph Mobile Device
+            MobileApp
+        end
+        subgraph Database Server
+            Database
+        end
+    end
+```
+
+## Level 3: Component Diagram
+The Component Diagram provides a more detailed view of the internal structure of the Web Application and Mobile App, showing the key components and their interactions.
+
+### Web Application Components
+```mermaid
+graph TD
+    subgraph Web Application
+        Frontend -->|Authentication Service| AuthenticationService
+        Frontend -->|Reservation Service| ReservationService
+        Frontend -->|Housekeeping Service| HousekeepingService
+        Frontend -->|Reporting Service| ReportingService
+        AuthenticationService -->|Backend API| BackendAPI
+        ReservationService -->|Backend API| BackendAPI
+        HousekeepingService -->|Backend API| BackendAPI
+        ReportingService -->|Backend API| BackendAPI
+    end
+```
+
+### Mobile App Components
+```mermaid
+graph TD
+    subgraph Mobile App
+        TaskManager -->|Authentication Service| MobileAuthService
+        TaskManager -->|Housekeeping Service| MobileHousekeepingService
+        MobileAuthService -->|Backend API| BackendAPI
+        MobileHousekeepingService -->|Backend API| BackendAPI
+    end
+```
+
+## Level 4: Code Diagram
+The Code Diagram provides a detailed view of the internal structure of a specific component, such as the Reservation Service.
+
+### Reservation Service (Example in Node.js)
+```mermaid
+classDiagram
+    class ReservationController {
+        +createReservation()
+        +cancelReservation()
+        +getReservation()
     }
-    Deployment_Node(appServer, "Application Server", "Node.js/Django") {
-      Container(api, "Backend API")
+
+    class ReservationService {
+        +bookRoom()
+        +processCancellation()
+        +fetchReservation()
     }
-    Deployment_Node(dbServer, "Database Server", "MySQL/PostgreSQL") {
-      ContainerDb(database, "Hotel Database")
+
+    class ReservationRepository {
+        +save()
+        +delete()
+        +findById()
     }
-  }
-  
-  Deployment_Node(mobileDevices, "Mobile Devices") {
-    Container(mobileApp, "Housekeeping Mobile App")
-  }
+
+    ReservationController --> ReservationService
+    ReservationService --> ReservationRepository
 ```
 
-I've removed unnecessary extra parameters and descriptions that might be causing rendering issues. Try again and let me know if any more fixes are needed!
+## Conclusion
+The C4 architectural diagrams provide a comprehensive view of the Hotel Management System at different levels of abstraction. These diagrams help in understanding the system's structure, components, and interactions, facilitating better planning, development, and maintenance.
