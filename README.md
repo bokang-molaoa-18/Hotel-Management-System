@@ -13,16 +13,17 @@ The Hotel Management System is designed to streamline hotel operations by integr
 ## Links
 - [SPECIFICATION.md](SPECIFICATION.md): Detailed system requirements and specifications.
 - [ARCHITECTURE.md](ARCHITECTURE.md): C4 diagrams and architecture details.
-- 
+- [STAKEHOLDER%20ANALYSIS%20TABLE.md](STAKEHOLDER%20ANALYSIS%20TABLE.md): Stakeholder Analysis table.
+- [SYSTEM%20REQUIREMENT%20DOCUMENT.md](SYSTEM%20REQUIREMENT%20DOCUMENT.md): System Requirement document.
 - [REFLECTION.md](REFLECTION.md): The Reflection on the challenges faced in balancing stakeholder needs.
 
 ## Getting Started
 1. Clone this repository.
 2. Review the [SPECIFICATION.md](SPECIFICATION.md) for system requirements.
 3. Explore the [ARCHITECTURE.md](ARCHITECTURE.md) for system design.
-4. k
-5. k
-6. k
+4. Explore the [STAKEHOLDER%20ANALYSIS%20TABLE.md] for stakeholder analysis table.
+5. Explore the [SYSTEM%20REQUIREMENT%20DOCUMENT.md] for system requirements document.
+6. Explore the [REFLECTION.md] for reflection on challenges faced in balancing stakeholder needs.
    
 
 
