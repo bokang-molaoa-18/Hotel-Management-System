@@ -4,47 +4,53 @@ Detailed use case specifications for a hotel management system, formatted with c
 
 1. Use Case: Book Room
    
-**Actor**: Guest
+ **Actor**: Guest
 
-**Description**: Allows guests to reserve a room online.
+ **Description**: Allows guests to reserve a room online.
 
-**Preconditions**:
-- System is operational
-- Available rooms exist for selected dates.
+ **Preconditions**:
+ - System is operational
+ - Available rooms exist for selected dates.
   
-**Postconditions**:
-- Reservation created with PENDING_PAYMENT status
-- Room inventory temporarily reduced.
+ **Postconditions**:
+ - Reservation created with PENDING_PAYMENT status
+ - Room inventory temporarily reduced.
   
-**Basic Flow:**
-- Guest selects check-in/check-out dates.
-- System displays available room types with prices.
-- Guest selects room and enters personal details (name, email).
-- System reserves room with 15-minute hold.
-- Guest completes payment via integrated gateway.
-- System sends confirmation email with booking ID.
+ **Basic Flow:**
+ - Guest selects check-in/check-out dates.
+ - System displays available room types with prices.
+ - Guest selects room and enters personal details (name, email).
+ - System reserves room with 15-minute hold.
+ - Guest completes payment via integrated gateway.
+ - System sends confirmation email with booking ID.
   
-**Alternative Flows:**
- - No rooms available: System displays "Sold Out" alert.
- - Payment fails: System releases room hold after 15 minutes.
+ **Alternative Flows:**
+  - No rooms available: System displays "Sold Out" alert.
+  - Payment fails: System releases room hold after 15 minutes.
 
 2. Use Case: Check-In
-**Actor:** Hotel Staff
-**Description:** Registers arriving guests and assigns rooms.
-**Preconditions:**
-- Valid booking exists
-- Room is marked READY
-**Postconditions:**
-- Room status = OCCUPIED
-- Housekeeping schedule updated
-**Basic Flow:**
-- Staff scans booking ID or guest ID.
-- System displays reservation details and payment status.
-- Staff assigns physical room key.
-- System updates room status and alerts housekeeping.
-**Alternative Flows:**
-- Unpaid booking: Redirect guest to payment gateway.
-- Early check-in: Charge extra fee if before 3 PM.
+   
+ **Actor:** Hotel Staff
+
+ **Description:** Registers arriving guests and assigns rooms.
+
+ **Preconditions:**
+ - Valid booking exists
+ - Room is marked READY
+  
+ **Postconditions:**
+ - Room status = OCCUPIED
+ - Housekeeping schedule updated
+  
+ **Basic Flow:**
+ - Staff scans booking ID or guest ID.
+ - System displays reservation details and payment status.
+ - Staff assigns physical room key.
+ - System updates room status and alerts housekeeping.
+   
+ **Alternative Flows:**
+ - Unpaid booking: Redirect guest to payment gateway.
+ - Early check-in: Charge extra fee if before 3 PM.
 
 3. Use Case: Check-Out
 Actor: Hotel Staff
