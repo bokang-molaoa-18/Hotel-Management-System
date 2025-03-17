@@ -1,3 +1,5 @@
+## Use Case Specifications for a Hotel Management System
+
 Detailed use case specifications for a hotel management system, formatted with clear success/error paths and alignment to stakeholder needs:
 
 1. Use Case: Book Room
