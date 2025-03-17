@@ -3,14 +3,19 @@
 Detailed use case specifications for a hotel management system, formatted with clear success/error paths and alignment to stakeholder needs:
 
 1. Use Case: Book Room
+   
 **Actor**: Guest
+
 **Description**: Allows guests to reserve a room online.
+
 **Preconditions**:
 - System is operational
-- Available rooms exist for selected dates
+- Available rooms exist for selected dates.
+  
 **Postconditions**:
 - Reservation created with PENDING_PAYMENT status
-- Room inventory temporarily reduced
+- Room inventory temporarily reduced.
+  
 **Basic Flow:**
 - Guest selects check-in/check-out dates.
 - System displays available room types with prices.
@@ -18,6 +23,7 @@ Detailed use case specifications for a hotel management system, formatted with c
 - System reserves room with 15-minute hold.
 - Guest completes payment via integrated gateway.
 - System sends confirmation email with booking ID.
+  
 **Alternative Flows:**
  - No rooms available: System displays "Sold Out" alert.
  - Payment fails: System releases room hold after 15 minutes.
