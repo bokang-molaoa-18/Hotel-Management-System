@@ -19,36 +19,6 @@
 ### Non-Functional Test Scenarios
 
 **Performance Test (NFR-001):**  
-- *Objective:* Verify system response under peak load  
-- *Test:* Simulate 1,000 concurrent users booking rooms  
-- *Success Criteria:*  
-  - API response time ≤2s (p95)  
-  - Error rate <0.5%  
-- *Tools:* JMeter/LoadRunner
-
-**Security Test (NFR-002):**  
-- *Objective:* Validate PCI-DSS compliance  
-- *Test:* Audit payment processing system  
-- *Success Criteria:*  
-  - No credit card data stored locally  
-  - All transactions use TLS 1.2+  
-  - Pass OWASP ZAP scan  
-- *Tools:* Nessus, OWASP ZAP
-
-### Traceability Matrix
-
-| Test Case | Covered Stakeholder Concerns             | Success Metric Addressed          |
-|-----------|------------------------------------------|------------------------------------|
-| TC-001    | Guest booking experience                 | 90% satisfaction rate              |
-| TC-004    | Overbooking prevention                   | <5% booking complaints             |
-| TC-007    | Third-party platform integration         | 100% sync accuracy                 |
-| NFR-001   | System reliability (IT Support)          | 99.9% uptime                       |
-| NFR-002   | Payment security (Payment Gateway)       | 99.5% transaction success rate     |
-
-
-### Non-Functional Test Scenarios
-
-**Performance Test (NFR-001):**  
 - **Objective:** Verify system response under peak load  
 - **Steps:**  
   1. Simulate 1,000 concurrent users booking rooms  
@@ -70,4 +40,18 @@
   - All transactions use TLS 1.3 encryption  
 - **Actual Result:**  
   - No sensitive data found in logs<br>TLS 1.3 enforced  
-- **Status:** **Pass**  
+- **Status:** **Pass** 
+
+
+### Traceability Matrix
+
+| Test Case | Covered Stakeholder Concerns             | Success Metric Addressed          |
+|-----------|------------------------------------------|------------------------------------|
+| TC-001    | Guest booking experience                 | 90% satisfaction rate              |
+| TC-004    | Overbooking prevention                   | <5% booking complaints             |
+| TC-007    | Third-party platform integration         | 100% sync accuracy                 |
+| NFR-001   | System reliability (IT Support)          | 99.9% uptime                       |
+| NFR-002   | Payment security (Payment Gateway)       | 99.5% transaction success rate     |
+
+
+ 
