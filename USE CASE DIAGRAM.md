@@ -1,3 +1,4 @@
+  ```mermaid
 graph TD;
   Guest -->|Initiates| BookRoom;
   Guest -->|Checks in| CheckIn;
@@ -16,4 +17,6 @@ graph TD;
   
   ThirdParty -->|Syncs bookings| SyncBookings;
   System -->|Integrates| SyncBookings;
+  end
+```
 
