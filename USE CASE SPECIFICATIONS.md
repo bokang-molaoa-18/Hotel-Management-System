@@ -2,7 +2,7 @@
 
 Detailed use case specifications for a hotel management system, formatted with clear success/error paths and alignment to stakeholder needs:
 
-1. Use Case: Book Room
+**1. Use Case: Book Room**
    
     **Actor**: Guest
    
@@ -28,7 +28,7 @@ Detailed use case specifications for a hotel management system, formatted with c
      - No rooms available: System displays "Sold Out" alert.
      - Payment fails: System releases room hold after 15 minutes.
 
-2. Use Case: Check-In
+**2. Use Case: Check-In**
    
      **Actor:** Hotel Staff
    
@@ -52,7 +52,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - Unpaid booking: Redirect guest to payment gateway.
       - Early check-in: Charge extra fee if before 3 PM.
 
-3. Use Case: Check-Out
+**3. Use Case: Check-Out**
    
       **Actor:** Hotel Staff
    
@@ -76,7 +76,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - Disputed charges: Flag for manager review.
       - Lost key: Deduct deposit from final bill.
 
-4. Use Case: Modify Reservation
+**4. Use Case: Modify Reservation**
    
       **Actor:** Guest
    
@@ -101,7 +101,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - New dates unavailable: Suggest alternative rooms/dates.
       - Price difference: Charge/refund via payment gateway.
 
-5. Use Case: Request Service
+**5. Use Case: Request Service**
    
       **Actor:** Guest
    
@@ -125,95 +125,80 @@ Detailed use case specifications for a hotel management system, formatted with c
       - Offline mode: Queue request until connectivity restored.
       - High-priority request: Escalate to supervisor.
 
-6. Use Case: Generate Reports
+**6. Use Case: Generate Reports**
    
-      Actor: Management
-      Description: Produces operational/financial analytics.
-      Preconditions:
+      **Actor:** Management
+      **Description:** Produces operational/financial analytics.
+   
+      **Preconditions:**
       - User has REPORT_GENERATOR role
       - Historical data exists
 
-      Postconditions:
+      **Postconditions:**
       - Report saved to dashboard
       - Audit log updated
 
-      Basic Flow:
+      **Basic Flow:**
       - User selects report type (Occupancy/Revenue).
       - Filters by date range and room category.
       - Clicks "Generate Report".
       - System compiles data into PDF/Excel.
 
-      Alternative Flows:
+      **Alternative Flows:**
       - Unauthorized access: Log security event and block action.
       - Large dataset: Offer asynchronous email delivery.
 
-7. Use Case: Sync Bookings
-Actor: Third-Party Platform
-Description: Updates inventory across external booking channels.
-Preconditions:
+**8. Use Case: Sync Bookings**
+   
+      **Actor:** Third-Party Platform.
+   
+      **Description:** Updates inventory across external booking channels.
+   
+      **Preconditions:**
+      - API connection is active.
+      - Valid API credentials.
+      
+      **Postconditions:**
+      - Inventory synchronized across all platforms.
+      - Audit trail recorded.
+      
+      **Basic Flow:**
+      - External platform sends booking request via API.
+      - System validates room availability.
+      - Creates reservation in central database.
+      - Returns confirmation to third party.
+      
+      **Alternative Flows:**
+      - Conflict detected: Return "Overbooking Error" code.
+      - Rate mismatch: Apply price parity rules.
 
-API connection is active
+9. **Use Case: Process Payment**
 
-Valid API credentials
+      Actor: Payment Gateway.
+    
+      **Description:** Handles financial transactions securely.
+    
+      **Preconditions:**
+      - PCI-DSS compliance verified.
+      - Guest payment details on file.
+      
+      **Postconditions:**
+      - Transaction recorded in ledger.
+      - Reservation status updated.
+      
+      **Basic Flow:**
+      - System sends encrypted payment request.
+      - Gateway validates card details.
+      - Processes transaction.
+      - Returns success/failure code.
+      
+      **Alternative Flows:**
+      - Expired card: Notify guest to update payment method.
+      - Fraud detected: Freeze account for review.
 
-Postconditions:
+**Key Design Notes:**
+- Error Handling: Alternative flows address critical failure points identified in stakeholder pain points (overbooking, payment failures).
+- Atomicity: Postconditions ensure system state consistency (e.g., inventory always matches reservations).
 
-Inventory synchronized across all platforms
-
-Audit trail recorded
-
-Basic Flow:
-
-External platform sends booking request via API.
-
-System validates room availability.
-
-Creates reservation in central database.
-
-Returns confirmation to third party.
-
-Alternative Flows:
-
-2a. Conflict detected: Return "Overbooking Error" code.
-
-3a. Rate mismatch: Apply price parity rules.
-
-8. Use Case: Process Payment
-Actor: Payment Gateway
-Description: Handles financial transactions securely.
-Preconditions:
-
-PCI-DSS compliance verified
-
-Guest payment details on file
-
-Postconditions:
-
-Transaction recorded in ledger
-
-Reservation status updated
-
-Basic Flow:
-
-System sends encrypted payment request.
-
-Gateway validates card details.
-
-Processes transaction.
-
-Returns success/failure code.
-
-Alternative Flows:
-
-2a. Expired card: Notify guest to update payment method.
-
-3a. Fraud detected: Freeze account for review.
-
-Key Design Notes:
-Traceability: Each use case maps to 2-3 stakeholder concerns from Assignment 4 (e.g., Sync Bookings → ThirdPartyPlatform's sync accuracy).
-
-Error Handling: Alternative flows address critical failure points identified in stakeholder pain points (overbooking, payment failures).
-
-Atomicity: Postconditions ensure system state consistency (e.g., inventory always matches reservations).
-
-This specification format provides developers with executable requirements while giving testers clear validation criteria. The alternative flows directly address edge cases reported by stakeholders during requirement gathering.
+This specification format provides developers with executable requirements while giving testers clear validation criteria. 
+The alternative flows directly address edge cases reported by stakeholders during requirement gathering.
