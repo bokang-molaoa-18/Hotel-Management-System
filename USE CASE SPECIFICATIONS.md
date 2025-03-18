@@ -2,17 +2,17 @@
 
 Detailed use case specifications for a hotel management system, formatted with clear success/error paths and alignment to stakeholder needs:
 
-**1. Use Case: Book Room**
+1. **Use Case: Book Room**
     
    **Actor:** Guest
    
    **Description:** Allows guests to reserve a room online.
    
-   **Preconditions**:
+   **Preconditions:**
     - System is operational
     - Available rooms exist for selected dates.
      
-   **Postconditions**:
+   **Postconditions:**
     - Reservation created with PENDING_PAYMENT status
     - Room inventory temporarily reduced.
      
@@ -28,7 +28,7 @@ Detailed use case specifications for a hotel management system, formatted with c
      - No rooms available: System displays "Sold Out" alert.
      - Payment fails: System releases room hold after 15 minutes.
 
-**2. Use Case: Check-In**
+2. **Use Case: Check-In**
    
    **Actor:** Hotel Staff
    
@@ -52,7 +52,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - Unpaid booking: Redirect guest to payment gateway.
       - Early check-in: Charge extra fee if before 3 PM.
 
-**3. Use Case: Check-Out**
+3. **Use Case: Check-Out**
    
    **Actor:** Hotel Staff
    
@@ -76,7 +76,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - Disputed charges: Flag for manager review.
       - Lost key: Deduct deposit from final bill.
 
-**4. Use Case: Modify Reservation**
+4. **Use Case: Modify Reservation**
    
    **Actor:** Guest
    
@@ -101,7 +101,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - New dates unavailable: Suggest alternative rooms/dates.
       - Price difference: Charge/refund via payment gateway.
 
-**5. Use Case: Request Service**
+5. **Use Case: Request Service**
    
    **Actor:** Guest
    
@@ -125,7 +125,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - Offline mode: Queue request until connectivity restored.
       - High-priority request: Escalate to supervisor.
 
-**6. Use Case: Generate Reports**
+6. **Use Case: Generate Reports**
    
    **Actor:** Management
    
@@ -149,7 +149,7 @@ Detailed use case specifications for a hotel management system, formatted with c
       - Unauthorized access: Log security event and block action.
       - Large dataset: Offer asynchronous email delivery.
 
-**8. Use Case: Sync Bookings**
+8. **Use Case: Sync Bookings**
    
    **Actor:** Third-Party Platform.
    
