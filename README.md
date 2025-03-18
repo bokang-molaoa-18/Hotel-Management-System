@@ -15,7 +15,10 @@ The Hotel Management System is designed to streamline hotel operations by integr
 - [ARCHITECTURE.md](ARCHITECTURE.md): C4 diagrams and architecture details.
 - [STAKEHOLDER%20ANALYSIS%20TABLE.md](STAKEHOLDER%20ANALYSIS%20TABLE.md): Stakeholder Analysis table.
 - [SYSTEM%20REQUIREMENT%20DOCUMENT.md](SYSTEM%20REQUIREMENT%20DOCUMENT.md): System Requirement document.
-- [REFLECTION.md](REFLECTION.md): The Reflection on the challenges faced in balancing stakeholder needs.
+- [TEST%20CASES.md](TEST%20CASES.md): Test Cases.
+- [USE%20CASE%20DIAGRAM.js](USE%20CASE%20DIAGRAM.js): Use Case Diagram.
+- [USE%20CASE%20SPECIFICATIONS.md](USE%20CASE%20SPECIFICATIONS.md): Use Case Specifications
+- [REFLECTION.md](REFLECTION.md): The Reflection on the challenges faced in balancing stakeholder needs and Challenges in translating requirements to use cases/tests (500 words).
 
 ## Getting Started
 1. Clone this repository.
@@ -23,4 +26,7 @@ The Hotel Management System is designed to streamline hotel operations by integr
 3. Explore the [ARCHITECTURE.md](ARCHITECTURE.md) for system design.
 4. Explore the [STAKEHOLDER%20ANALYSIS%20TABLE.md](STAKEHOLDER%20ANALYSIS%20TABLE.m) for stakeholder analysis table.
 5. Explore the [SYSTEM%20REQUIREMENT%20DOCUMENT.md](SYSTEM%20REQUIREMENT%20DOCUMENT.md) for system requirements document.
-6. Explore the [REFLECTION.md](REFLECTION.md) for reflection on challenges faced in balancing stakeholder needs.
+6. Explore the [TEST%20CASES.md](TEST%20CASES.md) for test case.
+7. Explore the [USE%20CASE%20DIAGRAM.js](USE%20CASE%20DIAGRAM.js) for the use case diagram.
+8. Explore the [USE%20CASE%20SPECIFICATIONS.md](USE%20CASE%20SPECIFICATIONS.md) for the use case specifications.
+9. Explore the [REFLECTION.md](REFLECTION.md) for reflection on challenges faced in balancing stakeholder needs.
