@@ -81,4 +81,32 @@ Adapting to these changes was essential for maintaining accuracy and completenes
 
 By addressing these challenges, we improved **requirement clarity**, enhanced **stakeholder collaboration**, and ensured **more reliable system functionality**.  
 
+# Challenges in Prioritization, Estimation, and Agile Implementation
+
+## Prioritization Difficulties
+
+- Choosing between **functional** and **security-related** tasks was challenging. While encryption is critical, it doesn’t contribute directly to **user experience**, making it harder to balance security with usability.
+- Some requirements were **vague**, requiring stakeholder clarification before breaking them into user stories.
+
+## Effort Estimation Issues
+
+- Estimating time for **encryption tasks** was difficult because security implementation depends on **compliance standards** and **testing rigor**.
+- **Story dependencies** (e.g., modifying a reservation relies on booking implementation) affected effort estimates, causing **potential delays**.
+
+## Aligning Agile with Stakeholder Needs
+
+- As the **only stakeholder** for this assignment, I had to evaluate **internal resistance** and difficulties in defining **MVP features**.
+- Some **must-have stories** required **backend and frontend coordination**, making it harder to deliver independently within a sprint.
+- Ensuring **continuous integration and testing** was necessary to validate **security and performance** but added complexity to the sprint.
+
+## Balancing Sprint Scope with Resources
+
+- The team must **balance workload** within the **2-week sprint** to avoid overloading developers.
+- Breaking down **user stories into independent, testable features** was challenging, as some functions depended on others.
+
+## Conclusion
+
+Despite these challenges, **Agile methodology** helped in structuring requirements into **manageable, testable features**. The **backlog** provided clarity, and the **sprint plan** ensured alignment with the **MVP**.  
+
+Going forward, refining **estimates** and iterating through **sprint reviews** will improve **planning efficiency**.
 
