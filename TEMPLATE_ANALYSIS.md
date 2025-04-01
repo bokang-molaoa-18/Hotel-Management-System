@@ -11,6 +11,60 @@
 | **Team Retrospective**       | What Went Well, To Improve, Action Items | Collaboration features | Great for continuous improvement | All Agile teams | <img width="362" alt="Team retrospective" src="https://github.com/user-attachments/assets/b5934af6-beed-4d4c-9a82-9cf5b4ebb390" /> |  
 
 ---
+# Custom Kanban Board
+
+## Screenshot of Kanban Board
+---
+
+Below is the screenshot of the customized Kanban board:
+---
+
+<img width="960" alt="bokang-molaoa-18's Templates   Kanban Board Implementation Project" src="https://github.com/user-attachments/assets/5bb56a20-9227-4745-9c69-8ff795336426" />
+
+---
+
+---
+The customization choices for this Kanban board include:
+- Added a "Testing" column to streamline QA processes.
+- Introduced a "Blocked" column for tasks stalled due to dependencies.
+- Linked GitHub Issues for real-time tracking of user stories and tasks.
+- Used labels (`bug`, `feature`) for categorization and prioritization.
+--- 
+
+### Features Displayed:
+
+---
+1. **Custom Columns**: Added "Testing" and "Blocked" columns to align with QA requirements and dependency tracking.
+
+   
+<img width="959" alt="Kanban Board - Added Testing and Blocked Column" src="https://github.com/user-attachments/assets/440b7b40-6656-4225-8232-89b37b035d56" />
+
+---
+
+2. **Linked Issues**: Cards are linked to GitHub Issues with labels such as `bug`, `question`, `enhancement` and `feature` cycled in blue.
+
+
+<img width="959" alt="Kanban Board - Added Testing and Blocked Column - Labels" src="https://github.com/user-attachments/assets/1a36dba4-7136-4d27-bd15-f6ab4dd7cf1f" />
+
+
+---
+
+
+3. **Task Assignments**: Tasks are assigned using `@mentions` for team collaboration.
+
+  
+<img width="512" alt="Kanban Board - Added Testing and Blocked Column - Assigned" src="https://github.com/user-attachments/assets/b4414d1a-b023-4d2e-b29a-79594e8a7c28" />
+
+---
+
+
+4. **Workflow Visualization**: The board visually tracks progress across stages: "Backlog," "To Do," "In Progress," "Testing," and "Blocked."
+
+
+<img width="957" alt="Kanban Board - With Tracks Progress Columns" src="https://github.com/user-attachments/assets/f97a31c7-5085-4647-b01b-2d52200addc9" />
+
+
+---
 
 ## Justification for Choosing Kanban Board
 
