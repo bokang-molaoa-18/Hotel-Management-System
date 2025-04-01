@@ -19,11 +19,11 @@
 The **Kanban** template is the best fit for my project because:  
 - It was the requirement for Assignment 7: GitHub Project Templates and Kanban Board Implementation
   
-- Objective
+**Objective**
 - Analyze GitHub’s project templates.
 - Select and justify the most suitable template for your system, and create a custom Kanban board to manage Agile workflows.
 
-- Other justifications:
+**Other justifications:**
 - It automatically moves tasks across columns, reducing manual work.
 - It supports sprint tracking, which aligns with Agile principles.
 - It integrates well with GitHub Issues, making it easier to manage linked tasks.
