@@ -45,3 +45,5 @@ The **Kanban** template is the best fit for my project because:
 | **Bug Tracker**        | New, Needs Triage, In Progress, Done | Auto-categorization of issues | Ideal for QA-focused teams | Maintenance projects     | ![Bug Tracker](https://via.placeholder.com/400x200?text=Bug+Tracker+Screenshot) |
 | **Iterative Development** | Backlog, Current Sprint, In Progress, Done | Sprint planning tools | Best for long-term project management | Scrum teams             | ![Iterative Development](https://via.placeholder.com/400x200?text=Iterative+Development+Screenshot) |
 | **Team Retrospective** | What Went Well, To Improve, Action Items | Collaboration features | Great for continuous improvement | All Agile teams          | ![Retrospective](https://via.placeholder.com/400x200?text=Retrospective+Screenshot) |  
+
+https://github.com/bokang-molaoa-18/Hotel-Management-System/blob/main/Screenshots/Bug%20Tracker%20Backlog.png
