@@ -110,3 +110,33 @@ Despite these challenges, **Agile methodology** helped in structuring requiremen
 
 Going forward, refining **estimates** and iterating through **sprint reviews** will improve **planning efficiency**.
 
+
+# Reflection on Kanban Board Implementation  
+
+## Challenges Faced  
+- **Selecting a template**: Kanban Board had useful automation, but lacked a Testing column.  
+- **Customizing labels**: Default labels didn't align with my needs, so I created `feature`, `bug`, and `enhancement`.  
+- **Work estimation**: Some tasks were harder to estimate, affecting sprint planning.  
+
+## Comparing GitHub, Trello, and Jira  
+| Tool  | Strengths  | Weaknesses  |
+|-------|-----------|------------|
+| **GitHub Projects** | Integrated with GitHub Issues, lightweight automation | Less advanced sprint tracking than Jira |
+| **Trello** | Simple, great UI, easy drag-and-drop | Lacks built-in development integration |
+| **Jira** | Powerful for Agile teams, detailed reporting | Steep learning curve, complex setup |
+
+## Lessons Learned  
+- **Customizing Kanban boards improves workflow visibility**.  
+- **Automating tasks in GitHub reduces manual tracking errors**.  
+- **Limiting work-in-progress improves task completion speed**.  
+
+
+
+
+
+
+
+
+
+
+
