@@ -1,4 +1,4 @@
-<img width="959" alt="Bug Tracker to triage" src="https://github.com/user-attachments/assets/0e4b1417-fb29-41af-bf71-8f28aa3b08dc" /># GitHub Project Template Analysis  
+# GitHub Project Template Analysis 
 
 | Template Name          | Columns                          | Automation Features                          | Agile Suitability       | Best Use Case               |
 |------------------------|----------------------------------|----------------------------------------------|-------------------------|----------------------------|
