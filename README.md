@@ -17,7 +17,8 @@ The Hotel Management System is designed to streamline hotel operations by integr
 - [SYSTEM%20REQUIREMENT%20DOCUMENT.md](SYSTEM%20REQUIREMENT%20DOCUMENT.md): System Requirement document.
 - [TEST%20CASES.md](TEST%20CASES.md): Test Cases.
 - [USE%20CASE%20DIAGRAM.js](USE%20CASE%20DIAGRAM.js): Use Case Diagram.
-- [USE%20CASE%20SPECIFICATIONS.md](USE%20CASE%20SPECIFICATIONS.md): Use Case Specifications
+- [USE%20CASE%20SPECIFICATIONS.md](USE%20CASE%20SPECIFICATIONS.md): Use Case Specifications.
+- [TEMPLATE_ANALYSIS.md](TEMPLATE_ANALYSIS.md): GitHub Project Templates 
 - [REFLECTION.md](REFLECTION.md): The Reflection on the challenges faced in balancing stakeholder needs and Challenges in translating requirements to use cases/tests (500 words).
 
 ## Getting Started
@@ -29,4 +30,5 @@ The Hotel Management System is designed to streamline hotel operations by integr
 6. Explore the [TEST%20CASES.md](TEST%20CASES.md) for test case.
 7. Explore the [USE%20CASE%20DIAGRAM.js](USE%20CASE%20DIAGRAM.js) for the use case diagram.
 8. Explore the [USE%20CASE%20SPECIFICATIONS.md](USE%20CASE%20SPECIFICATIONS.md) for the use case specifications.
-9. Explore the [REFLECTION.md](REFLECTION.md) for reflection on challenges faced in balancing stakeholder needs.
+9. Explore the [TEMPLATE_ANALYSIS.md](TEMPLATE_ANALYSIS.md): GitHub Project Templates
+10. Explore the [REFLECTION.md](REFLECTION.md) for reflection on challenges faced in balancing stakeholder needs.
