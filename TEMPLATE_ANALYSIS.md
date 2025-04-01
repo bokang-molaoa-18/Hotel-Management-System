@@ -1,4 +1,4 @@
-# GitHub Project Template Analysis 
+<img width="959" alt="Bug Tracker Backlog" src="https://github.com/user-attachments/assets/e42319b8-8a22-4a01-bfec-9efb1341191b" /># GitHub Project Template Analysis 
 
 | Template Name          | Columns                          | Automation Features                          | Agile Suitability       | Best Use Case               |
 |------------------------|----------------------------------|----------------------------------------------|-------------------------|----------------------------|
@@ -38,7 +38,7 @@ The **Kanban** template is the best fit for my project because:
 |------------------------|----------------------------------|----------------------------------------------|-------------------------|----------------------------|------------------------------------------------------------------------------|
 | **Basic Kanban**       | To Do, In Progress, Done        | None                                         | Good for manual tracking | Small projects          |
 | **Automated Kanban**   | To Do, In Progress, Review, Done| Auto-moves issues when updated               | Excellent for sprint tracking | Agile teams        |            |
-| **Bug Triage**         | New Issues, In Progress, Needs Review, Done | Auto-labels and assigns priority | Best for bug tracking | Software teams             |            |
+| **Bug Triage**         | New Issues, In Progress, Needs Review, Done | Auto-labels and assigns priority | Best for bug tracking | Software teams             |       <img width="959" alt="Bug Tracker Backlog" src="https://github.com/user-attachments/assets/d43aa3a6-e2d7-430f-b39a-847113831b85" />      |
 | **Team Planning**      | Icebox, Backlog, Ready, In Progress, Done | Helps in backlog grooming & planning | Best for large teams | Enterprise projects       |            |
 | **Feature Release**    | To Do, In Progress, Done        | Prioritization features                     | Good for feature-focused development | Product teams           |  |
 | **Kanban**             | To Do, In Progress, Done        | WIP limits                                   | Excellent for workflow visualization | Teams transitioning to Agile |  |
