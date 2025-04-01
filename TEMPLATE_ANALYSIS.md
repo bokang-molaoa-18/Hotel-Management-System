@@ -1,4 +1,4 @@
-<img width="959" alt="Bug Tracker Backlog" src="https://github.com/user-attachments/assets/e42319b8-8a22-4a01-bfec-9efb1341191b" /># GitHub Project Template Analysis 
+# GitHub Project Template Analysis
 
 | Template Name          | Columns                          | Automation Features                          | Agile Suitability       | Best Use Case               |
 |------------------------|----------------------------------|----------------------------------------------|-------------------------|----------------------------|
