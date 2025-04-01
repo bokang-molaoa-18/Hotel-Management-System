@@ -30,7 +30,7 @@ The **Kanban** template is the best fit for my project because:
 - Its structure (To Do, In Progress, Review, Done) provides a clear workflow for our development process.
 - The automation features will help our team focus on development rather than project management overhead.
 - It offers flexibility to add custom columns (e.g., Testing, Blocked) to fit our specific workflow needs.
-
+  
 
 # GitHub Project Template Analysis  
 
@@ -38,8 +38,8 @@ The **Kanban** template is the best fit for my project because:
 |------------------------|----------------------------------|----------------------------------------------|-------------------------|----------------------------|------------------------------------------------------------------------------|
 | **Basic Kanban**       | To Do, In Progress, Done        | None                                         | Good for manual tracking | Small projects          |
 | **Automated Kanban**   | To Do, In Progress, Review, Done| Auto-moves issues when updated               | Excellent for sprint tracking | Agile teams        |            |
-| **Bug Triage**         | New Issues, In Progress, Needs Review, Done | Auto-labels and assigns priority | Best for bug tracking | Software teams             |       <img width="959" alt="Bug Tracker Backlog" src="https://github.com/user-attachments/assets/d43aa3a6-e2d7-430f-b39a-847113831b85" />      |
-| **Team Planning**      | Icebox, Backlog, Ready, In Progress, Done | Helps in backlog grooming & planning | Best for large teams | Enterprise projects       |            |
+| **Bug Triage**         | New Issues, In Progress, Needs Review, Done | Auto-labels and assigns priority | Best for bug tracking | Software teams             | <img width="959" alt="Bug Tracker Backlog" src="https://github.com/user-attachments/assets/d43aa3a6-e2d7-430f-b39a-847113831b85" /> |
+| **Team Planning**      | Icebox, Backlog, Ready, In Progress, Done | Helps in backlog grooming & planning | Best for large teams | Enterprise projects       | <img width="959" alt="Team Planning Template" src="https://github.com/user-attachments/assets/450ac58c-5a6e-4aad-ba56-b815c1cffaaf" /> |
 | **Feature Release**    | To Do, In Progress, Done        | Prioritization features                     | Good for feature-focused development | Product teams           |  |
 | **Kanban**             | To Do, In Progress, Done        | WIP limits                                   | Excellent for workflow visualization | Teams transitioning to Agile |  |
 | **Bug Tracker**        | New, Needs Triage, In Progress, Done | Auto-categorization of issues | Ideal for QA-focused teams | Maintenance projects     |  |
