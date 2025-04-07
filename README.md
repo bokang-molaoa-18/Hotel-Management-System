@@ -21,6 +21,7 @@ The Hotel Management System is designed to streamline hotel operations by integr
 - [TEMPLATE_ANALYSIS.md](TEMPLATE_ANALYSIS.md): GitHub Project Templates.
 - [JUSTIFICATION.md](JUSTIFICATION.md): Justification for choosing the Kanban GitHub Project Template for my project.
 - [KANBAN_EXPLANATION.md](KANBAN_EXPLANATION.md): Explaination of Kanban Board Functionality.
+- [ACTIVITY_DIAGRAMS.md](ACTIVITY_DIAGRAMS.md): Activity Diagrams.
 - [REFLECTION.md](REFLECTION.md): The Reflection on the challenges faced in balancing stakeholder needs and Challenges in translating requirements to use cases/tests (500 words).
 
 ## Getting Started
@@ -35,4 +36,5 @@ The Hotel Management System is designed to streamline hotel operations by integr
 9. Explore the [TEMPLATE_ANALYSIS.md](TEMPLATE_ANALYSIS.md): GitHub Project Templates.
 10. Explore the [KANBAN_EXPLANATION.md](KANBAN_EXPLANATION.md): Explaination of Kanban Board Functionality.
 11. Explore the [JUSTIFICATION.md](JUSTIFICATION.md): Justification for choosing the Kanban GitHub Project Template for my project.
-12. Explore the [REFLECTION.md](REFLECTION.md) for reflection on challenges faced in balancing stakeholder needs.
+12. Explore the [ACTIVITY_DIAGRAMS.md](ACTIVITY_DIAGRAMS.md): Activity Diagrams.
+13. Explore the [REFLECTION.md](REFLECTION.md) for reflection on challenges faced in balancing stakeholder needs.
