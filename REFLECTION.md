@@ -131,6 +131,43 @@ Going forward, refining **estimates** and iterating through **sprint reviews** w
 - **Limiting work-in-progress improves task completion speed**.  
 
 
+# Reflection: Lessons Learned in State and Activity Diagram Modeling
+
+## Challenge 1: Choosing Granularity for States/Actions
+
+Balancing the level of detail in both state and activity diagrams was one of the most difficult aspects of this assignment. On one hand, being too general meant the diagrams didn’t capture critical transitions or actions that affect system behavior. On the other hand, too much detail made the diagrams cluttered and difficult to read—especially when including guard conditions, parallel actions, and swimlanes.
+
+**Example:** In the `Room` object, deciding whether to distinguish between “Under Maintenance,” “Being Cleaned,” and “Temporarily Unavailable” states created complexity. Ultimately, grouping similar operational states under a broader category like “Unavailable” kept things readable and usable for planning.
+
+**Lesson:** The key is to consider your primary audience (developers, stakeholders) and the purpose of the diagram—whether for high-level understanding or detailed design.
+
+---
+
+## Challenge 2: Aligning Diagrams with Agile User Stories
+
+Mapping the dynamic behavior of the system to the Agile user stories was a multi-step process. Some user stories, such as “As a guest, I want to book a room,” naturally translated into workflows like `Book Room`. However, others—especially backend or system-level stories—required combining multiple diagrams to fully illustrate the behavior.
+
+**Example:** The `Check-Out` activity involves both the guest (front-end action) and the system (backend processes like updating room status, issuing invoice, and initiating feedback collection). Aligning that to user stories required breaking down epics into smaller features and tracing those into functional workflows.
+
+**Lesson:** Maintaining traceability between user stories, use cases, and diagram flows helped ensure consistency and avoided missing critical functionality.
+
+---
+
+## Challenge 3: Comparing State Diagrams vs. Activity Diagrams
+
+| Aspect                  | State Diagrams                                | Activity Diagrams                                  |
+|------------------------|-----------------------------------------------|----------------------------------------------------|
+| Focus                  | Object lifecycle behavior                     | Process flow / workflows                           |
+| Example                | Room → Booked → Checked-in → Available        | Book Room → Validate → Confirm → Payment          |
+| Strengths              | Shows valid states & transitions over time    | Highlights logic, decisions, concurrency           |
+| Limitations            | Doesn’t capture who performs actions          | Doesn’t show long-term object state changes        |
+
+**Summary:**
+- **State diagrams** are ideal for understanding how system entities behave and change.
+- **Activity diagrams** are better for modeling full workflows, user interactions, and system sequences.
+
+Both diagram types complement each other, and using them together provides a complete picture of system behavior—both from an internal object state and a user-facing workflow perspective.
+
 
 
 
