@@ -168,6 +168,45 @@ Mapping the dynamic behavior of the system to the Agile user stories was a multi
 
 Both diagram types complement each other, and using them together provides a complete picture of system behavior—both from an internal object state and a user-facing workflow perspective.
 
+---
+
+# REFLECTION: Assignment 9 – Domain Modeling and Class Diagram
+
+## Challenges in Designing Domain Model and Class Diagram
+
+Creating a domain model and class diagram for the Hotel Management System posed several design challenges, especially in balancing abstraction and specificity. For instance, defining the granularity of entities such as `Booking`, `Payment`, and `Invoice` required careful thought to avoid both redundancy and oversimplification.
+
+Choosing attributes and methods was another challenge. Deciding which operations belonged to which class involved referencing the system’s functional requirements and use cases from earlier assignments. For example, the `Guest` entity was clearly responsible for initiating bookings, but should the `Room` class also handle booking logic or simply manage availability? These decisions impacted the system's cohesion and coupling, and we opted for clear separation of concerns.
+
+Relationship modeling was also complex. We had to decide between association, aggregation, and composition. In the case of `Booking` and `Payment`, we modeled it as a strong association because a payment must exist for every confirmed booking. Similarly, we used one-to-many relationships for Guests and Bookings to reflect real-world scenarios accurately.
+
+## Alignment with Previous Assignments
+
+The domain model and class diagram are closely aligned with previous work:
+- From **Assignment 4 (Functional Requirements)**, we derived system features like booking, check-in, payment, and feedback.
+- In **Assignment 5 (Use Cases)**, we identified actors such as `Guest` and `Staff`, which were converted into domain entities.
+- From **Assignment 8 (State and Activity Diagrams)**, we borrowed behaviors and methods for our classes. For instance, the `Booking` class has `confirm()` and `cancel()` methods derived from its state transitions and workflow.
+
+These prior assignments served as blueprints for defining domain responsibilities and object behaviors.
+
+## Trade-offs and Design Decisions
+
+One trade-off involved minimizing the use of inheritance. We considered subclassing `Room` into `StandardRoom`, `Suite`, etc., but to keep the model lean and avoid unnecessary complexity, we instead used attributes like `roomType`. However, in a larger system, inheritance could offer better extensibility.
+
+Another trade-off was combining `Invoice` and `Payment` as separate classes rather than integrating them, which helped us represent the business logic more clearly — payment is the action; the invoice is the output.
+
+## Lessons Learned
+
+This assignment deepened our understanding of object-oriented design principles. We learned:
+- The importance of well-defined responsibilities within a class.
+- How tightly coupled classes can limit flexibility and testability.
+- How models must balance real-world resemblance with system efficiency.
+- That diagrams serve as communication tools across development, not just design.
+
+Ultimately, this assignment highlighted the significance of domain-driven design and consistent validation against real-world business rules.
+
+---
+
 
 
 
