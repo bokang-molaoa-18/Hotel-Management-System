@@ -1,6 +1,4 @@
-# Reflection
-
-**Challenges Faced in Balancing Stakeholder Needs**
+# REFLECTION: Challenges Faced in Balancing Stakeholder Needs**
 
 1. Conflicting Priorities:
    - Guests prioritize ease of use and quick responses, while management focuses on operational efficiency and reporting capabilities.
@@ -111,7 +109,7 @@ Despite these challenges, **Agile methodology** helped in structuring requiremen
 Going forward, refining **estimates** and iterating through **sprint reviews** will improve **planning efficiency**.
 
 
-# Reflection on Kanban Board Implementation  
+# REFLECTION: On Kanban Board Implementation  
 
 ## Challenges Faced  
 - **Selecting a template**: Kanban Board had useful automation, but lacked a Testing column.  
@@ -131,7 +129,7 @@ Going forward, refining **estimates** and iterating through **sprint reviews** w
 - **Limiting work-in-progress improves task completion speed**.  
 
 
-# Reflection: Lessons Learned in State and Activity Diagram Modeling
+# REFLECTION: Lessons Learned in State and Activity Diagram Modeling
 
 ## Challenge 1: Choosing Granularity for States/Actions
 
